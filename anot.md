@@ -109,3 +109,7 @@ echo "<a href='sair.php'>Sair</a>";
 ///////CUIDADO
 
 EXTRA-->https://github.com/profjuanpablo/loginphp
+
+
+
+colocar o listar usuario no adm, como resposta a se logar. e tb o novo usuario.

@@ -149,6 +149,12 @@
         ?>
 
     </p>
+    <p class="text-center text-success">
+			<?php if(isset($_SESSION['loginDeslogado'])){
+				echo $_SESSION['loginDeslogado'];
+				unset ($_SESSION['loginDeslogado']);
+			}?>
+		</p>
 
     <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
 
