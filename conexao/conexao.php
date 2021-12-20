@@ -26,4 +26,4 @@
 
 ?>
 
-Pressione Shift + Tab para acessar o histórico do bate-papo.
+

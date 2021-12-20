@@ -32,9 +32,9 @@ try{
     
 <h1>Lista de Usuarios</h1>
 <hr>
-<a href="frmusuario.php">Novo Cadastro</a>
+<a class="btn btn-outline-success" href="frmusuario.php">Novo Cadastro</a>
 <hr>
-<table class="table">
+<table class="table table-dark table-striped ">
     <thead>
         <tr>
            <th>id</th> 
@@ -61,8 +61,8 @@ try{
             <td><?php echo $users->criado ?></td>
             <td><?php echo $users->modificado ?></td>
             
-            <td><a href="frmusuario.php?idusuario=<?php echo $users->idusuario ?>">Editar</a></td>
-            <td><a href="frmusuario.php?op=del&idusuario=<?php echo  $users->idusuario ?>">Excluir</a></td>
+            <td><a class="btn btn-outline-primary" href="frmusuario.php?idusuario=<?php echo $users->idusuario ?>">Editar</a></td>
+            <td><a class="btn btn-outline-danger" href="frmusuario.php?op=del&idusuario=<?php echo  $users->idusuario ?>">Excluir</a></td>
 
         </tr>
         <?php } ?>

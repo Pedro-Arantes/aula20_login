@@ -8,7 +8,7 @@ include('../conexao/conexao.php');
 
 
 
-echo "Olá - ".$_SESSION['usuarionome']."<hr>";
+
 
 
 
@@ -24,6 +24,61 @@ echo "<a href='login.php'>Sair</a>";
     <title>Colaborador</title>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+        Adm
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="colaborador.php">Home</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Formulários
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="frmcliente.php">Cliente</a></li>
+            <li><a class="dropdown-item" href="frmreserva.php">Produtos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="frmvenda.php">Venda</a></li>
+            <li><a class="dropdown-item" href="frmvendedores.php">Vendedores</a></li>
+            
+          </ul>
+        </li>
+        <!--Itens separados na navbar-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Listas
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="listarclientes.php">Cliente</a></li>
+            <li><a class="dropdown-item" href="listarprodutos.php">Produto</a></li>
+            <li><hr class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" href="listarvendas.php">Vendas</a></li>
+            <li><a class="dropdown-item" href="listarvendedores.php">Vendedor</a></li>
+            <li><a class="dropdown-item" href="listarusuarios.php">Usuario</a></li>
+          </ul>
+        </li>
+        
+          
+        
+      </ul>
+      <form class="d-flex">
+        
+        <button href="<?php echo "<a class='btn btn-outline-warning' href='sair.php'>Deslogar</a>";  ?>" class="btn btn-outline-warning" type="submit">Deslogar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <?php echo "Olá - ".$_SESSION['usuarionome']."<hr>"; ?>
     <h1>Seja Bem vindo</h1>
 </body>
 </html>
